@@ -3,6 +3,7 @@ import { useAuthStore } from "../store/useAuthStore";
 import AuthImagePattern from "../components/AuthImagePattern";
 import { Link } from "react-router-dom";
 import { Eye, EyeOff, Loader2, Lock, Mail, MessageSquare } from "lucide-react";
+import Footer from "../components/Footer";
 
 const LoginPage = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -18,6 +19,7 @@ const LoginPage = () => {
   };
 
   return (
+    <>
     <div className="min-h-screen grid lg:grid-cols-2">
       {/* Left Side - Form */}
       <div className="flex flex-col justify-center items-center p-6 sm:p-12">
@@ -114,6 +116,7 @@ const LoginPage = () => {
         subtitle={"Sign in to continue your conversations and catch up with your messages."}
       />
     </div>
+    </>
   );
 };
 export default LoginPage;

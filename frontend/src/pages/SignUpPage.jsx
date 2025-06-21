@@ -33,6 +33,7 @@ const SignUpPage = () => {
     }
   };
   return (
+    <>
     <div className="min-h-screen grid lg:grid-cols-2">
       <div className="flex flex-col justify-center items-center p-6 sm:p-12">
         <div className="w-full max-w-md space-y-8">
@@ -150,6 +151,7 @@ const SignUpPage = () => {
         subtitle="Connect with friends, share moments, and stay in touch with your loved ones."
       />
     </div>
+    </>
   );
 };
 

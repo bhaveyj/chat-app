@@ -8,9 +8,7 @@ function Footer() {
             <div>
           <h2 className="text-white text-lg font-semibold mb-4">About Us</h2>
           <p className="mb-4">
-            Music School is a premier institution dedicated to teaching the art
-            and science of music. We nurture talent from the ground up,
-            fostering a vibrant community of musicians.
+            ChatSphere is a real-time messaging platform designed for seamless and secure communication. It connects users instantly, enabling meaningful conversations through a fast, intuitive, and reliable interface.
           </p>
         </div>
         <div>
@@ -18,7 +16,7 @@ function Footer() {
           <ul>
             <li>
               <a
-                href="#"
+                href="#home"
                 className="hover:text-white transition-colors duration-300"
               >
                 Home
@@ -26,7 +24,7 @@ function Footer() {
             </li>
             <li>
               <a
-                href="#"
+                href="#about"
                 className="hover:text-white transition-colors duration-300"
               >
                 About
@@ -37,15 +35,15 @@ function Footer() {
                 href="#"
                 className="hover:text-white transition-colors duration-300"
               >
-                Courses
+                Contact
               </a>
             </li>
             <li>
               <a
-                href="#"
+                href="#faq"
                 className="hover:text-white transition-colors duration-300"
               >
-                Contact
+                FAQs
               </a>
             </li>
           </ul>
@@ -53,35 +51,35 @@ function Footer() {
         <div>
           <h2 className="text-white text-lg font-semibold mb-4">Follow Us</h2>
           <div className="flex space-x-4">
-            <a
-              href="#"
-              className="hover:text-white transition-colors duration-300"
-            >
-              Facebook
-            </a>
-            <a
-              href="#"
-              className="hover:text-white transition-colors duration-300"
-            >
-              Twitter
-            </a>
-            <a
-              href="#"
-              className="hover:text-white transition-colors duration-300"
-            >
-              Instagram
-            </a>
+            <ul>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/bhavya-joshi-0a6490227/"
+                className="hover:text-white transition-colors duration-300"
+              >
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/bhaveyj"
+                className="hover:text-white transition-colors duration-300"
+              >
+                GitHub
+              </a>
+            </li>
+          </ul>
           </div>
         </div>
         <div>
           <h2 className="text-white text-lg font-semibold mb-4">Contact Us</h2>
           <p>New Delhi, India</p>
-          <p>Delhi 10001</p>
-          <p>Email: info@musicschool.com</p>
-          <p>Phone: (123) 456-7890</p>
+          <p>Delhi 11001</p>
+          <p>Email: bjoshi1503@gmail.com</p>
+          <p>Phone: (+91) 9599911350</p>
         </div>
         </div>
-        <p className="text-center text-xs pt-8">© 2024 Music School. All rights reserved.</p>
+        <p className="text-center text-xs pt-8">© 2025 ChatSphere. All rights reserved.</p>
     </footer>
   )
 }
