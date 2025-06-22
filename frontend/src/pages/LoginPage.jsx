@@ -4,6 +4,7 @@ import AuthImagePattern from "../components/AuthImagePattern";
 import { Link } from "react-router-dom";
 import { Eye, EyeOff, Loader2, Lock, Mail, MessageSquare } from "lucide-react";
 import Footer from "../components/Footer";
+import AnimatedSide from "../components/AnimatedSide";
 
 const LoginPage = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -20,14 +21,11 @@ const LoginPage = () => {
 
   return (
     <>
-      <div className="min-h-screen grid lg:grid-cols-2">
-        {/* Left Side - Form */}
-        <AuthImagePattern
-          title={"Welcome back!"}
-          subtitle={
-            "Sign in to continue your conversations and catch up with your messages."
-          }
-        />
+      <div className="grid grid-cols-1 md:grid-cols-2 min-h-screen">
+        <div className="hidden md:block">
+          <AnimatedSide />
+        </div>
+
         <div className="flex flex-col justify-center items-center p-6 sm:p-12">
           <div className="w-full max-w-md space-y-8">
             {/* Logo */}

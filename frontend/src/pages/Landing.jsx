@@ -6,10 +6,9 @@ import { LogOut, MessageSquare, Settings, User } from "lucide-react";
 import { useAuthStore } from "../store/useAuthStore";
 import bgg from "../assets/bgg.jpg"; // adjust path as needed
 
-
 function Landing() {
   const { logout } = useAuthStore();
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   return (
     <div>
       <header
@@ -50,29 +49,26 @@ function Landing() {
         </div>
       </header>
       <section id="home">
-        <div
-        className="hero min-h-screen"
-        style={{
-          backgroundImage: `url(${bgg})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        <div className="hero-overlay"></div>
-        <div className="hero-content text-neutral-content text-center">
-          <div className="max-w-md">
-            <h1 className="mb-5 text-5xl font-bold">
-              Chat. Connect. Collaborate.
-            </h1>
-            <p className="mb-5">
-              Experience seamless real-time messaging with ChatSphere — built
-              for fast, secure, and intuitive communication. Stay connected
-              anytime, anywhere.
-            </p>
-            <button onClick={() => navigate('/signup')} className="btn btn-primary">Get Started</button>
+        <div className="hero min-h-screen bg-gradient-to-br from-blue-500 via-purple-500 to-indigo-500 text-gray-800">
+          <div className="hero-content text-center">
+            <div className="max-w-md">
+              <h1 className="mb-5 text-5xl font-bold">
+                Chat. Connect. Collaborate.
+              </h1>
+              <p className="mb-5">
+                Experience seamless real-time messaging with ChatSphere — built
+                for fast, secure, and intuitive communication. Stay connected
+                anytime, anywhere.
+              </p>
+              <button
+                onClick={() => navigate("/signup")}
+                className="btn btn-primary"
+              >
+                Get Started
+              </button>
+            </div>
           </div>
         </div>
-      </div>
       </section>
       <section id="about" className="bg-base-200 py-16 px-6">
         <div className="max-w-6xl mx-auto text-center">
@@ -162,7 +158,7 @@ function Landing() {
             <div className="collapse-content">
               <p>
                 Yes, you need to sign up or log in to access the chat features.
-                We use JWT for secure authentication.
+                We use cookies for secure authentication.
               </p>
             </div>
           </div>
