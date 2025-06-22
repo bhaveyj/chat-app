@@ -1,13 +1,15 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { LogOut, MessageSquare, Settings, User } from "lucide-react";
 import { useAuthStore } from "../store/useAuthStore";
 import bgg from "../assets/bgg.jpg"; // adjust path as needed
 
+
 function Landing() {
   const { logout } = useAuthStore();
+  const navigate = useNavigate()
   return (
     <div>
       <header
@@ -67,7 +69,7 @@ function Landing() {
               for fast, secure, and intuitive communication. Stay connected
               anytime, anywhere.
             </p>
-            <button className="btn btn-primary">Get Started</button>
+            <button onClick={() => navigate('/signup')} className="btn btn-primary">Get Started</button>
           </div>
         </div>
       </div>

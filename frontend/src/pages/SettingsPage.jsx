@@ -113,7 +113,7 @@ const SettingsPage = () => {
         </div>
       </div>
     </div>
-    <Footer />
+    <p className="text-center text-xs pt-8 pb-6">© 2025 ChatSphere. All rights reserved.</p>
     </>
   );
 };

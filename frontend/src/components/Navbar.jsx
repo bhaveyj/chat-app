@@ -1,10 +1,12 @@
 import React from 'react'
 import { useAuthStore } from '../store/useAuthStore'
-import { LogOut, MessageSquare, Settings, User } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { HomeIcon, LogOut, MessageSquare, Settings, User } from 'lucide-react';
+import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
   const {logout, authUser} = useAuthStore()
+  const location = useLocation()
+  const isAuthPage = location.pathname === "/login" || location.pathname === "/signup";
  return (
     <header
       className="bg-base-100 border-b border-base-300 fixed w-full top-0 z-40 
@@ -22,6 +24,12 @@ const Navbar = () => {
           </div>
 
           <div className="flex items-center gap-2">
+            {isAuthPage && (
+    <Link to="/home" className="btn btn-sm gap-2">
+      <HomeIcon className="w-4 h-4" />
+      <span className="hidden sm:inline">Home</span>
+    </Link>
+  )}
             <Link
               to={"/settings"}
               className={`

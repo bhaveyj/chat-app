@@ -32,7 +32,7 @@ function Footer() {
             </li>
             <li>
               <a
-                href="#"
+                href="/contact-us"
                 className="hover:text-white transition-colors duration-300"
               >
                 Contact
