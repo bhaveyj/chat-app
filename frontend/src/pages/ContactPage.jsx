@@ -12,10 +12,10 @@ const ContactPage = () => {
 
     emailjs
       .sendForm(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID, // ← replace
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID, // ← replace
+        import.meta.env.VITE_EMAILJS_SERVICE_ID, 
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID, 
         form.current,
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY // ← replace
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY 
       )
       .then(
         () => {
