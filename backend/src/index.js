@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 5001
 app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
-    origin: 'http://localhost:5173',
+    origin: ['http://localhost:5173', 'https://chat-app-beryl-eta.vercel.app'],
     credentials: true
 }
 ))
